@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Acess</title>
+
+    <style type="text/css">
+    
+        /*styling the video frame*/
+        
+        .videoObject {
+            border: 12px solid #222;
+            background: grey;
+            height: 500px;
+            width: 700px;        
+        }
+        
+        .btn {
+            height: 100px;
+            width: 725px;
+            background: cornflowerblue;
+            font-weight: bold;
+            font-size: 56px;
+        }
+        
+        .canvas {
+            border: 12px solid #222;
+            background: grey;
+            height: 500px;
+            width: 700px; 
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    
+    <!--making video object to display video-->
+    
+    <div class="videoObject">
+        <video id="videoElement" autoplay="true" width="700" height="500"></video>
+    </div>
+    
+    <!--Now capture the Image-->
+    
+    <!--creating a button to capture the Image-->
+         
+    <button id="capture" class="btn">Capture Image</button>
+                                  
+    <!--canvas to display the captured picture-->
+    
+    <canvas id="image" class="canvas"></canvas>
+                
+                            
+    <script src="script.js"></script>
+    
+</body>
+</html>
